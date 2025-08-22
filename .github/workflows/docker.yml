@@ -52,7 +52,7 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64,linux/arm64,linux/arm/v7
           tags: |
             ghcr.io/metatube-community/metatube-server:dev
           cache-from: type=gha
@@ -65,7 +65,7 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64,linux/arm64,linux/arm/v7
           tags: |
             ghcr.io/metatube-community/metatube-server:latest
             ghcr.io/metatube-community/metatube-server:${{ steps.shell.outputs.version }}
